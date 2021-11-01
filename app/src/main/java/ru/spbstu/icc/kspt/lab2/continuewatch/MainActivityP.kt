@@ -39,12 +39,12 @@ class MainActivityP : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         Log.i("test", "onPause")
-        prefs.edit().putInt(getString(R.string.time),secondsElapsed).apply()
+        prefs.edit().putInt(getString(R.string.time), secondsElapsed).apply()
         stopped = true
     }
 
     override fun onResume() {
-        secondsElapsed = prefs.getInt(getString(R.string.time),0)
+        secondsElapsed = prefs.getInt(getString(R.string.time), 0)
         super.onResume()
         Log.i("test", "onResume")
         stopped = false
