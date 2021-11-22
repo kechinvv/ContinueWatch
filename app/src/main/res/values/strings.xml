@@ -4,4 +4,5 @@
     <string name="land">TextView</string>
     <string name="hello">Hello World!</string>
     <string name="time">0</string>
+    <string name="thread" />
 </resources>
